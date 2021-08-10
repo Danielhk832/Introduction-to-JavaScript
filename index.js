@@ -294,10 +294,10 @@ function vowelCounter(string){
       }
     }
   }
-  console.log(vowelCount);
+  return vowelCount;
   }
   
-  vowelCounter('striiiiing');
+  console.log(vowelCounter('striiiIIIIiing'));
 
 
 
