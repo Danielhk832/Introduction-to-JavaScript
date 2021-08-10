@@ -282,9 +282,22 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
-}
+function vowelCounter(string){
+  const usingSplit = string.split('');
+  const vowels = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
+  
+  let vowelCount = 0;
+  for (let i = 0; i < usingSplit.length; i++){
+    for(let j = 0; j < vowels.length; j++){
+      if(usingSplit[i] === vowels[j]){
+        vowelCount++;
+      }
+    }
+  }
+  console.log(vowelCount);
+  }
+  
+  vowelCounter('striiiiing');
 
 
 
